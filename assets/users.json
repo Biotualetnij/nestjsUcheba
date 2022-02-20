@@ -1,0 +1,6 @@
+{
+  "userDataBase": [
+    { "login": "user", "password": "password" },
+    { "login": "hello", "password": "world" }
+  ]
+}
