@@ -1,11 +1,14 @@
-import { Controller } from '@nestjs/common';
-
+import { Body, Controller, Post, Res } from '@nestjs/common';
+import { userDTO } from '../log-in/log-in.dto';
+import { Response } from 'express';
+import { SignUpService } from './sign-up.service';
 @Controller('sign-up')
-export class SignUpController {}
-// fs.writeFile('assets/users.json', '{ "user": "user" }', 'utf8', (error) => {
-//     if (error) {
-//       console.log('An error has occurred ', error);
-//       return;
-//     }
-//     console.log('Data written successfully to disk');
-//   });
+export class SignUpController {
+  constructor(private signUpService: SignUpService) {}
+
+  @Post('registerUser')
+  regUser(@Body() body: userDTO, @Res() response: Response) {
+    console.log(body);
+    this.signUpService.signUp(body, response);
+  }
+}

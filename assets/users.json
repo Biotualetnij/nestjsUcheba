@@ -1,6 +1,1 @@
-{
-  "userDataBase": [
-    { "login": "user", "password": "password" },
-    { "login": "hello", "password": "world" }
-  ]
-}
+{"userDataBase":[{"login":"user","password":"password"},{"login":"hello","password":"world"},{"login":"Den","password":"arguvich"},{"login":"user1","password":"weqfweqgwqeg"}]}
