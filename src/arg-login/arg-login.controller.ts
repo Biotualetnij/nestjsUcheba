@@ -18,7 +18,7 @@ export class ArgLoginController {
         response.send(resolve.toString());
       },
       (rejects) => {
-        console.log('it is reject' + rejects);
+        console.log('rejected!' + rejects);
         return;
       },
     );
