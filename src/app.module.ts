@@ -7,10 +7,11 @@ import { LogInService } from './login-signup-system/log-in/log-in.service';
 import { SignUpService } from './login-signup-system/sign-up/sign-up.service';
 import { ArgLoginController } from './arg-login/arg-login.controller';
 import { ArgLoginService } from './arg-login/arg-login.service';
+import { ArgSignupService } from './arg-signup/arg-signup.service';
 
 @Module({
   imports: [],
   controllers: [AppController, SignUpController, LogInController, ArgLoginController],
-  providers: [AppService, LogInService, SignUpService, ArgLoginService],
+  providers: [AppService, LogInService, SignUpService, ArgLoginService, ArgSignupService],
 })
 export class AppModule {}
