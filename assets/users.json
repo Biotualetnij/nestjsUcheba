@@ -1,1 +1,10 @@
-{"userDataBase":[{"login":"user","password":"password"},{"login":"hello","password":"world"},{"login":"Den","password":"arguvich"},{"login":"user1","password":"weqfweqgwqeg"},{"login":"sd","password":"password"}]}
+{
+  "userDataBase": [
+    { "login": "user", "password": "password" },
+    { "login": "hello", "password": "world" },
+    { "login": "Den", "password": "arguvich" },
+    { "login": "user1", "password": "weqfweqgwqeg" },
+    { "login": "hehetest", "password": "rgregwgwqrg" },
+    { "login": "hehetes3t", "password": "rgregwgwq4rg" }
+  ]
+}
