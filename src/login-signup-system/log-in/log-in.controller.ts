@@ -15,7 +15,20 @@ export class LogInController {
   ckeckUser(@Body() body: userDTO, @Res() response: Response) {
     this.logInService.checkUserData(body).then(
       (resolve) => {
+        console.log('cookte');
+        response.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+        response.header('set-cookie', 'myfirstcookie=somecookievalue');
+        response.setHeader(
+          'Set-Cookie',
+          'visited=true; Max-Age=3000; HttpOnly, Secure',
+        );
+        response.cookie('login', 'true', {
+          httpOnly: true,
+          maxAge: 1000000,
+          sameSite: false,
+        });
         response.send(resolve.toString());
+        response.end();
       },
       (rejects) => {
         console.log('it is reject' + rejects);
