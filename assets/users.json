@@ -1,10 +1,1 @@
-{
-  "userDataBase": [
-    { "login": "user", "password": "password" },
-    { "login": "hello", "password": "world" },
-    { "login": "Den", "password": "arguvich" },
-    { "login": "user1", "password": "weqfweqgwqeg" },
-    { "login": "hehetest", "password": "rgregwgwqrg" },
-    { "login": "hehetes3t", "password": "rgregwgwq4rg" }
-  ]
-}
+{"userDataBase":[{"login":"user","password":"password"},{"login":"hello","password":"world"},{"login":"Den","password":"arguvich"},{"login":"user1","password":"weqfweqgwqeg"},{"login":"hehetest","password":"rgregwgwqrg"},{"login":"hehetes3t","password":"rgregwgwq4rg"},{"login":"sd","password":"password"},{"login":"admin","password":"admin"}]}
