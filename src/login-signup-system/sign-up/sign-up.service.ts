@@ -11,7 +11,7 @@ export class SignUpService {
       (response) => {
         answer = response;
         console.log(answer.data);
-        res.send(answer.message);
+        res.send(answer.answer);
         this.writeFile(answer);
       },
       (error) => {
